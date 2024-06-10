@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from learn_gb.wmodel.models import Order, Client, Article
+from myproject.wmodel.models import Order, Client, Article
 
 
 class Command(BaseCommand):

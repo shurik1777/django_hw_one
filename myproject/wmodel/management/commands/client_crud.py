@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from learn_gb.wmodel.models import Client
+from myproject.wmodel.models import Client
 from django.utils import timezone
 
 
