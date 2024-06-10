@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <title>Александр Восьмерик — ведущий инженер сети</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style type="text/css">
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>Александ Восьмерик</h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <p>Я работаю в провайдере связи с 2018 года, когда-то начинал обычным диспетчером. Отвечал на звонки и
+                выслушивал
+                все негативные эмоции абонентов, да и сейчас слушаю, но уже в записи</p>
+            <p>В 2022 получил повышение и стал ведущим инженером сети. Добавилось огромное количество задач, но меня
+                они не страшат и я стараюсь решать их в кратчайшие сроки, конечно очень не хватает толкового системного
+                администратора и бывает трудно делать всю его работу - учусь.</p>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+
+            <img src="{% static 'main/img/my_foto.jpg' %}" alt='ФОТО'>
+            <button class="btn btn-success" style="display: block; margin: 0 auto;" type="submit"
+                    onclick="window.location.href = '{% url 'main' %}'">На Главную!</button>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2>Контакты для связи</h2>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <p>Телефон: +7 (123) 456-78-90</p>
+            <p>Почта: <a href="mailto: shurik1777@gmail.com">shurik1777@gmail.com</a></p>
+            <p>Телеграм: @shurik1777</p>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
