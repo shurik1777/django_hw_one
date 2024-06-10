@@ -1,7 +1,6 @@
 from django.core.management.base import BaseCommand
-from wmodel.models import Client
+from learn_gb.wmodel.models import Client
 from django.utils import timezone
-import argparse
 
 
 class Command(BaseCommand):

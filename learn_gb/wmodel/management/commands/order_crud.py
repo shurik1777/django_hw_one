@@ -1,6 +1,5 @@
 from django.core.management.base import BaseCommand
-from wmodel.models import Order, Client, Article
-import argparse
+from learn_gb.wmodel.models import Order, Client, Article
 
 
 class Command(BaseCommand):
