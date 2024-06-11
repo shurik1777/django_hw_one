@@ -25,4 +25,5 @@ urlpatterns = [
     path('ti/', include('seminar_3.urls')),
     # path('wy/', include('myapp.urls')),
     # path('wm/', include('wmodel.urls')),
+    path('lec/', include('lection3.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
