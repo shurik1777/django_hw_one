@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'main',
     'wmodel',
     'seminar_3',
+    'lection3',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
