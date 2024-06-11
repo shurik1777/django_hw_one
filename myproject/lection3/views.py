@@ -1,6 +1,7 @@
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
 from django.views import View
+from django.views.generic import TemplateView
 
 
 def hello(request):
@@ -40,4 +41,8 @@ def post_detail(request, year, month, slug):
 
 def my_view(request):
     context = {"name": "John"}
-    return render(request, "my_view.html", context)
+    return render(request, "lection3/index.html", context)
+
+
+class TemplIf(TemplateView):
+    template_name = "my_template.html"
