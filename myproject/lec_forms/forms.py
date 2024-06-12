@@ -8,6 +8,18 @@ class UserForm(f.Form):
     email = f.EmailField()
     age = f.IntegerField(min_value=0, max_value=120)
 
+    def clean_name(self):
+        name = self.cleaned_data['name']
+        if len(name) < 3:
+            raise f.ValidationError('Name must be at least 3 characters')
+        return name
+
+    def clean_email(self):
+        email: str = self.cleaned_data['email']
+        if not (email.endswith('vk.team') or email.endswith('corp.mail.ru')):
+            raise f.ValidationError('Email must end with vk.team or corp.mail.ru')
+        return email
+
 
 class ManyFieldsForm(f.Form):
     name = f.CharField(max_length=50)
