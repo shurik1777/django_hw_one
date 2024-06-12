@@ -41,8 +41,29 @@ def post_detail(request, year, month, slug):
 
 def my_view(request):
     context = {"name": "John"}
-    return render(request, "lection3/index.html", context)
+    return render(request, "lection3/my_template.html", context)
 
 
 class TemplIf(TemplateView):
-    template_name = "my_template.html"
+    template_name = "lection3/templ_if.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['message'] = "Здрасте Вашей маме!"
+        context['number'] = 5
+        return context
+
+
+def view_for(request):
+    my_list = ['apple', 'banana', 'orange']
+    my_dict = {
+        'Каждый': 'красный',
+        'охотник': 'оранжевый',
+        'желает': 'желтый',
+        'знать': 'зеленый',
+        'где': 'голубой',
+        'сидит': 'синий',
+        'фазан': 'фиолетовый',
+    }
+    context = {'my_list': my_list, 'my_dict': my_dict}
+    return render(request, "lection3/templ_for.html", context)
