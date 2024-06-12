@@ -1,9 +1,9 @@
 from django.shortcuts import render
 
 
-def index(request):
-    return render(request, 'main/my_template.html')
+def index_main(request):
+    return render(request, 'main/index.html')
 
 
-def about(request):
+def about_main(request):
     return render(request, 'main/about.html')

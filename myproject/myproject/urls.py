@@ -16,8 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.conf import settings
-from django.conf.urls.static import static
+# from django.conf import settings
+# from django.conf.urls.static import static
+# from myproject.lection3.views import index
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,4 +28,5 @@ urlpatterns = [
     # path('wy/', include('myapp.urls')),
     # path('wm/', include('wmodel.urls')),
     path('lec/', include('lection3.urls')),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    # path('', index),
+]
