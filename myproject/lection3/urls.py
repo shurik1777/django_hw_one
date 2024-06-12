@@ -1,7 +1,7 @@
 from django.urls import path
 from .views import hello, IndexView
 from .views import year_post, MonthPost, post_detail
-from .views import my_view, TemplIf, view_for
+from .views import my_view, TemplIf, view_for, about, index
 
 urlpatterns = [
     path('hello/', hello, name='hello'),
@@ -12,4 +12,6 @@ urlpatterns = [
     path('', my_view, name='index'),
     path('if/', TemplIf.as_view(), name='templ_if'),
     path('for/', view_for, name='templ_for'),
+    path('index/', index, name='index'),
+    path('about/', about, name='about'),
 ]

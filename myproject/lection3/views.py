@@ -67,3 +67,11 @@ def view_for(request):
     }
     context = {'my_list': my_list, 'my_dict': my_dict}
     return render(request, "lection3/templ_for.html", context)
+
+
+def index(request):
+    return render(request, "lection3/index.html")
+
+
+def about(request):
+    return render(request, "lection3/about.html")
