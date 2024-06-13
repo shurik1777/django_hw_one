@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'seminar_3',
     'lection3',
     'lec_forms',
+    'form_seminar',
 ]
 
 MIDDLEWARE = [
