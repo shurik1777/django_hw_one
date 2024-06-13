@@ -29,5 +29,6 @@ urlpatterns = [
     # path('wm/', include('wmodel.urls')),
     path('lec/', include('lection3.urls')),
     # path('', index),
-    path('f/', include('lec_forms.urls'))
+    path('f/', include('lec_forms.urls')),
+    path('fs/', include('form_seminar.urls'))
 ]
