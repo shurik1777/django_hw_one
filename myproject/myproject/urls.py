@@ -30,5 +30,6 @@ urlpatterns = [
     path('lec/', include('lection3.urls')),
     # path('', index),
     path('f/', include('lec_forms.urls')),
-    path('fs/', include('form_seminar.urls'))
+    path('fs/', include('form_seminar.urls')),
+    path('hw/', include('hw_logik_and_template.urls')),
 ]
