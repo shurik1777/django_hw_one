@@ -1307,3 +1307,5 @@ INFO 2024-06-15 13:51:38,760 basehttp 8704 4540 "GET /hw/orders/ HTTP/1.1" 200 5
 INFO 2024-06-15 13:51:39,298 autoreload 8704 13972 D:\Ucheba\django_project\myproject\hw_logik_and_template\views.py changed, reloading.
 INFO 2024-06-15 13:51:39,837 autoreload 5936 11812 Watching for file changes with StatReloader
 INFO 2024-06-15 13:51:39,931 basehttp 5936 15244 "GET /hw/orders/ HTTP/1.1" 200 609
+INFO 2024-06-15 14:30:37,441 autoreload 15352 4692 Watching for file changes with StatReloader
+INFO 2024-06-15 14:30:38,729 basehttp 15352 12696 "GET / HTTP/1.1" 200 648
