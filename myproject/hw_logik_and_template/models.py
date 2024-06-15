@@ -67,7 +67,7 @@ class Order(m.Model):
     date_of_order = m.DateField(auto_now_add=True)
 
     def __str__(self):
-        return f"Order #{self.pk} by {self.client.name}"
+        return f"Client: {self.client}, price: {self.client.name}"
 
     def calculate_total_price(self):
         """
@@ -77,4 +77,5 @@ class Order(m.Model):
         total = Decimal(0)
         for product in self.products.all():
             total += product.price
-        self.total_amount = total
+        self.price = total
+        self.save()

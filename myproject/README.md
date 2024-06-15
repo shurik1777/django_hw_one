@@ -67,7 +67,7 @@ py manage.py article_crud list
 1. **Создать новый заказ:**
 
 ```
-py manage.py order_crud create --client_id 1 --article_id 2 --price 8 --date_of_decor "2024-06-09"
+py manage.py order_crud create --client_id 1 --product_id 2 --price 8 --date_of_order "2024-06-09"
 ```
 
 2. **Прочитать информацию о заказе:**

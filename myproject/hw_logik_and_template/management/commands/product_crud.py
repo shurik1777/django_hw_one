@@ -1,3 +1,5 @@
+from decimal import Decimal
+
 from django.core.management.base import BaseCommand
 from ...models import Product
 from django.utils import timezone
@@ -12,8 +14,8 @@ class Command(BaseCommand):
         parser_create = subparsers.add_parser('create', help='Создать новый продукт')
         parser_create.add_argument('--title', type=str, help='Название продукта')
         parser_create.add_argument('--content', type=str, help='Описание продукта')
-        parser_create.add_argument('--price', type=float, help='Цена продукта')
-        parser_create.add_argument('--amount', type=float, help='Сумма продукта')
+        parser_create.add_argument('--price', type=Decimal, help='Цена продукта')
+        parser_create.add_argument('--amount', type=int, help='Сумма продукта')
         parser_create.add_argument('--date', type=str, help='Дата поступления продукта',
                                    default=timezone.now().strftime("%Y-%m-%d"))
 
@@ -21,8 +23,8 @@ class Command(BaseCommand):
         parser_update.add_argument('--product_id', type=int, help='Идентификатор продукта для обновления')
         parser_update.add_argument('--title', type=str, help='Название нового продукта')
         parser_update.add_argument('--content', type=str, help='Содержание нового продукта')
-        parser_update.add_argument('--price', type=float, help='Цена нового продукта')
-        parser_update.add_argument('--amount', type=float, help='Количество нового продукта')
+        parser_update.add_argument('--price', type=Decimal, help='Цена нового продукта')
+        parser_update.add_argument('--amount', type=int, help='Количество нового продукта')
         parser_update.add_argument('--date', type=str, help='Дата поступления нового продукта')
 
         parser_list = subparsers.add_parser('list', help='Перечислить все продукты')

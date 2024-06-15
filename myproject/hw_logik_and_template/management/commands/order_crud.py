@@ -1,3 +1,5 @@
+from decimal import Decimal
+
 from django.core.management.base import BaseCommand
 from ...models import Order, Client, Product
 
@@ -11,15 +13,15 @@ class Command(BaseCommand):
         parser_create = subparsers.add_parser('create', help='Создать новый заказ')
         parser_create.add_argument('--client_id', type=int, help='Идентификатор клиента')
         parser_create.add_argument('--product_id', type=int, help='Идентификатор заказа')
-        parser_create.add_argument('--price', type=float, help='Стоимость заказа')
-        parser_create.add_argument('--date_of_decor', type=str, help='Дата оформления')
+        parser_create.add_argument('--price', type=Decimal, help='Стоимость заказа')
+        parser_create.add_argument('--date_of_order', type=str, help='Дата оформления')
 
         parser_update = subparsers.add_parser('update', help='Обновить информацию по заказу')
         parser_update.add_argument('--order_id', type=int, help='Идентификатор заказа для обновления')
         parser_update.add_argument('--client_id', type=int, help='Новый идентификатор клиента')
         parser_update.add_argument('--product_id', type=int, help='Новый идентификатор заказа')
-        parser_update.add_argument('--price', type=float, help='Цена нового заказа')
-        parser_update.add_argument('--date_of_decor', type=str, help='Новая дата оформления')
+        parser_update.add_argument('--price', type=Decimal, help='Цена нового заказа')
+        parser_update.add_argument('--date_of_order', type=str, help='Новая дата оформления')
 
         parser_list = subparsers.add_parser('list', help='Список всех заказов')
 
@@ -41,15 +43,33 @@ class Command(BaseCommand):
             self.handle_get(**options)
 
     def handle_create(self, **options):
-        client = Client.objects.get(id=options['client_id'])
-        product = Product.objects.get(id=options['product_id'])
+        client_id = options.get('client_id')
+        product_id = options.get('product_id')
+        price = options.get('price', None)
+        date_of_order = options.get('date_of_order', None)
+
+        try:
+            client = Client.objects.get(id=client_id)
+        except Client.DoesNotExist:
+            self.stdout.write(self.style.ERROR(f'Клиент с идентификатором: {client_id} не найден.'))
+            return
+
+        try:
+            products = Product.objects.get(id=product_id)
+        except Product.DoesNotExist:
+            self.stdout.write(self.style.ERROR(f'Продукт с идентификатором: {product_id} не найден.'))
+            return
+
         order = Order(
             client=client,
-            product=product,
-            price=options['price'],
-            date_of_decor=options['date_of_decor']
+            price=price,
+            date_of_order=date_of_order
         )
         order.save()
+
+        # Добавляем продукты к заказу
+        order.products.set([products])
+
         self.stdout.write(self.style.SUCCESS('Заказ успешно создан'))
 
     def handle_update(self, **options):
@@ -59,7 +79,7 @@ class Command(BaseCommand):
         order.client = client
         order.product = product
         order.price = options['price'] if options['price'] else order.price
-        order.date_of_decor = options['date_of_decor'] if options['date_of_decor'] else order.date_of_decor
+        order.date_of_order = options['date_of_order'] if options['date_of_order'] else order.date_of_order
         order.save()
         self.stdout.write(self.style.SUCCESS('Заказ успешно обновлен'))
 
@@ -82,14 +102,17 @@ class Command(BaseCommand):
         try:
             order = Order.objects.get(id=order_id)
             self.stdout.write(f"ID: {order.id}\n"
-                              f"Товар: {order.client}\n"
-                              f"Описание: {order.product}\n"
-                              f"Цена: {order.price}\n"
-                              f"Дата реализации: {order.date_of_decor}")
+                              f"Client: {order.client}\n"
+                              f"Products: {', '.join([product.title for product in order.products.all()])}\n"
+                              f"Price: {order.price}\n"
+                              f"Order Date: {order.date_of_order}")
+            return  # добавленный return
         except Order.DoesNotExist:
-            self.stdout.write(self.style.ERROR(f'Клиент с идентификатором: {order_id} не существует.'))
+            self.stdout.write(
+                self.style.ERROR(f'Order with id: {order_id} does not exist.'))  # исправленный текст ошибки
 
-# py manage.py order_crud update --order_id 1 --client_id 1 --product_id 2 --price 7 --date_of_decor "2024-06-10"
+# py manage.py order_crud create --client_id 1 --product_id 2 --price 8 --date_of_order "2024-06-09"
+# py manage.py order_crud update --order_id 1 --client_id 1 --product_id 1 --price 7 --date_of_order "2024-06-10"
 # py manage.py order_crud list
 # py manage.py order_crud delete --order_id 1
 # py manage.py order_crud get --order_id 1
