@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'lection3',
     'lec_forms',
     'form_seminar',
+    'hw_logik_and_template',
 ]
 
 MIDDLEWARE = [
