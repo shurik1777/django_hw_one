@@ -36,9 +36,9 @@
     {% else %}
         <ul>
             {% for ord in order %} 
-                <h3>Order by <a href='{% url "orders" ord.buyer.id %}'>{{ ord.buyer }}</a></h3>
-                <li>Total Amount: {{ ord.total_amount }}$</li>
-                <li>Order Date: {{ ord.order_date }}</li>
+                <h3>Order by <a href='{% url "orders" ord.client.id %}'>{{ ord.client }}</a></h3>
+                <li>Total Amount: {{ ord.price }}$</li>
+                <li>Order Date: {{ ord.date_of_order }}</li>
                 <hr>
                 <br>
             {% endfor %}

@@ -1211,3 +1211,99 @@ INFO 2024-06-15 12:49:56,593 basehttp 6436 2096 "GET / HTTP/1.1" 200 648
 INFO 2024-06-15 12:50:03,553 basehttp 6436 2096 "GET /hw/pre/ HTTP/1.1" 200 1044
 INFO 2024-06-15 12:50:05,587 basehttp 6436 2096 "GET /hw/orders/ HTTP/1.1" 200 369
 INFO 2024-06-15 12:50:08,240 basehttp 6436 2096 "GET /hw/orders/ HTTP/1.1" 200 369
+INFO 2024-06-15 13:48:09,411 autoreload 8704 13972 Watching for file changes with StatReloader
+INFO 2024-06-15 13:48:10,522 basehttp 8704 4540 "GET / HTTP/1.1" 200 648
+INFO 2024-06-15 13:48:18,581 basehttp 8704 4540 "GET /hw/pre/ HTTP/1.1" 200 1044
+ERROR 2024-06-15 13:48:20,901 log 8704 4540 Internal Server Error: /hw/orders/
+Traceback (most recent call last):
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\django_project\myproject\hw_logik_and_template\views.py", line 45, in orders
+    return render(request, "hw_logik_and_template/orders.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 325, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 478, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'orders' with arguments '('',)' not found. 1 pattern(s) tried: ['hw/orders/(?P<client_id>[0-9]+)\\Z']
+ERROR 2024-06-15 13:48:20,906 basehttp 8704 4540 "GET /hw/orders/ HTTP/1.1" 500 178388
+INFO 2024-06-15 13:49:05,097 basehttp 8704 4540 "GET /hw/orders/ HTTP/1.1" 200 566
+INFO 2024-06-15 13:50:10,528 basehttp 8704 4540 "GET /hw/orders/ HTTP/1.1" 200 590
+INFO 2024-06-15 13:50:19,763 basehttp 8704 4540 "GET /hw/orders/ HTTP/1.1" 200 590
+INFO 2024-06-15 13:50:21,387 basehttp 8704 4540 "GET /hw/orders/ HTTP/1.1" 200 590
+INFO 2024-06-15 13:50:57,934 basehttp 8704 4540 "GET /hw/orders/ HTTP/1.1" 200 590
+INFO 2024-06-15 13:50:58,733 basehttp 8704 4540 "GET /hw/orders/ HTTP/1.1" 200 590
+INFO 2024-06-15 13:50:59,389 basehttp 8704 4540 "GET /hw/orders/ HTTP/1.1" 200 590
+INFO 2024-06-15 13:51:00,223 basehttp 8704 4540 "GET /hw/orders/ HTTP/1.1" 200 590
+INFO 2024-06-15 13:51:00,802 basehttp 8704 4540 "GET /hw/orders/ HTTP/1.1" 200 590
+INFO 2024-06-15 13:51:01,335 basehttp 8704 4540 "GET /hw/orders/ HTTP/1.1" 200 590
+INFO 2024-06-15 13:51:01,885 basehttp 8704 4540 "GET /hw/orders/ HTTP/1.1" 200 590
+INFO 2024-06-15 13:51:38,760 basehttp 8704 4540 "GET /hw/orders/ HTTP/1.1" 200 590
+INFO 2024-06-15 13:51:39,298 autoreload 8704 13972 D:\Ucheba\django_project\myproject\hw_logik_and_template\views.py changed, reloading.
+INFO 2024-06-15 13:51:39,837 autoreload 5936 11812 Watching for file changes with StatReloader
+INFO 2024-06-15 13:51:39,931 basehttp 5936 15244 "GET /hw/orders/ HTTP/1.1" 200 609

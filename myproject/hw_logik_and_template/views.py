@@ -18,7 +18,7 @@ def new_page(request):
 def orders(request, client_id: int = None):
     if client_id:
         client = get_object_or_404(Client, id=client_id)
-        order = Order.objects.filter(buyer=client)
+        order = Order.objects.filter(client=client)
         today = timezone.now()
 
         # Заказы клиента за период времени
