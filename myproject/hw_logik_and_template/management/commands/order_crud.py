@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from myproject.hw_logik_and_template.models import Order, Client, Product
+from ...models import Order, Client, Product
 
 
 class Command(BaseCommand):

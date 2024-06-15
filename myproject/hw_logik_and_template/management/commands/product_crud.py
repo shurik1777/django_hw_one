@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from myproject.hw_logik_and_template.models import Product
+from ...models import Product
 from django.utils import timezone
 
 

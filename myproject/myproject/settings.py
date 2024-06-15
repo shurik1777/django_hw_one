@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'myapp',
     'main',
-    'wmodel',
+    # 'wmodel',
     'seminar_3',
     'lection3',
     'lec_forms',
