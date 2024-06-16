@@ -6,51 +6,48 @@
 
 {% block content %}
 <div class="container">
-    <h1>{{ title }}</h1>
+    <h2>{{ title }}</h2>
 
-    {% if client %}
-    {% if not order %}
-    <p>Не было заказов за указанный период</p>
-    {% else %}
-    {% for ord in order %}
-    <p>Товары в Заказе:</p>
+    <h3>Заказы за неделю:</h3>
     <ul>
-        {% for product in ord.products.all %}
-        <hr>
-        <li>{{ product.title }} - {{ product.price }}$</li>
-        {% endfor %}
-        <h3>Заказы</ul>
-    <p>Cумма заказа: {{ ord.price }}$</p>
-    <p>Дата заказа: {{ ord.date_of_order }}</p>
-    <hr>
-    <br>
-    {% endfor %}
-    {% endif %}
-
-    <h3>Заказы за неделю</h3>
-    {% for product in products_week %}
-    {{ product.title }} <br>
-    {% endfor %}
-
-    <h3>Заказы за месяц</h3>
-    {% for product in products_month %}
-    {{ product.title }} <br>
-    {% endfor %}
-
-    <h3>Заказы за год</h3>
-    {% for product in products_year %}
-    {{ product.title }} <br>
-    {% endfor %}
-    {% else %}
-    <ul>
-        {% for ord in order %}
-        <h3>Сортировка по клиенту: <a href='{% url "orders" ord.client.id %}'>{{ ord.client }}</a></h3>
-        <li>Cумма заказа: {{ ord.price }}$</li>
-        <li>Дата заказа: {{ ord.date_of_order }}</li>
-        <hr>
-        <br>
+        {% for order in orders_week %}
+            <li>
+                Дата заказа: {{ order.date_of_order }} -
+                Товары:
+                {% for product in order.products.all %}
+                    {{ product.title }}
+                {% endfor %}
+                - Сумма: {{ order.price }}$
+            </li>
         {% endfor %}
     </ul>
-    {% endif %}
+
+    <h3>Заказы за месяц:</h3>
+    <ul>
+        {% for order in orders_month %}
+            <li>
+                Дата заказа: {{ order.date_of_order }} -
+                Товары:
+                {% for product in order.products.all %}
+                    {{ product.title }}
+                {% endfor %}
+                - Сумма: {{ order.price }}$
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h3>Заказы за год:</h3>
+    <ul>
+        {% for order in orders_year %}
+            <li>
+                Дата заказа: {{ order.date_of_order }} -
+                Товары:
+                {% for product in order.products.all %}
+                    {{ product.title }}
+                {% endfor %}
+                - Сумма: {{ order.price }}$
+            </li>
+        {% endfor %}
+    </ul>
 </div>
 {% endblock %}
