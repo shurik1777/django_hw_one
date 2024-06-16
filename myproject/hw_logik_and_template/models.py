@@ -1,5 +1,3 @@
-from decimal import Decimal
-
 from django.db import models as m
 
 
@@ -74,8 +72,6 @@ class Order(m.Model):
         Метод для вычисления общей стоимости заказа
         на основе цен продуктов.
         """
-        total = Decimal(0)
-        for product in self.products.all():
-            total += product.price
-        self.price = total
+        total_price = sum([product.price for product in self.products.all()])
+        self.price = total_price
         self.save()

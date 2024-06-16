@@ -1380,3 +1380,691 @@ Traceback (most recent call last):
     raise FieldError(
 django.core.exceptions.FieldError: Cannot resolve keyword 'order_date' into field. Choices are: client, client_id, date_of_order, id, price, products
 ERROR 2024-06-15 14:31:59,816 basehttp 15352 12696 "GET /hw/orders/4 HTTP/1.1" 500 110843
+INFO 2024-06-16 11:07:45,065 autoreload 8016 13464 Watching for file changes with StatReloader
+INFO 2024-06-16 11:07:49,755 basehttp 8016 10000 "GET / HTTP/1.1" 200 648
+WARNING 2024-06-16 11:07:49,988 log 8016 10000 Not Found: /favicon.ico
+WARNING 2024-06-16 11:07:49,989 basehttp 8016 10000 "GET /favicon.ico HTTP/1.1" 404 2966
+WARNING 2024-06-16 11:07:49,994 log 8016 10196 Not Found: /favicon.ico
+WARNING 2024-06-16 11:07:49,995 basehttp 8016 10196 "GET /favicon.ico HTTP/1.1" 404 2966
+INFO 2024-06-16 11:07:58,306 basehttp 8016 5596 "GET /hw/pre/ HTTP/1.1" 200 1044
+INFO 2024-06-16 11:08:00,560 basehttp 8016 5596 "GET /hw/orders/ HTTP/1.1" 200 1313
+INFO 2024-06-16 11:08:35,209 basehttp 8016 5596 "GET /hw/orders/ HTTP/1.1" 200 1233
+INFO 2024-06-16 11:08:38,332 basehttp 8016 5596 "GET /hw/orders/ HTTP/1.1" 200 1233
+ERROR 2024-06-16 11:08:42,813 log 8016 5596 Internal Server Error: /hw/orders/1
+Traceback (most recent call last):
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\django_project\myproject\hw_logik_and_template\views.py", line 25, in orders
+    order_week = order.filter(order_date__gte=today - timedelta(days=7))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1600, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1632, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1482, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1294, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1759, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'order_date' into field. Choices are: client, client_id, date_of_order, id, price, products
+ERROR 2024-06-16 11:08:42,817 basehttp 8016 5596 "GET /hw/orders/1 HTTP/1.1" 500 111273
+ERROR 2024-06-16 11:09:55,917 log 8016 4648 Internal Server Error: /hw/orders/3
+Traceback (most recent call last):
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\django_project\myproject\hw_logik_and_template\views.py", line 25, in orders
+    order_week = order.filter(order_date__gte=today - timedelta(days=7))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1600, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1632, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1482, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1294, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1759, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'order_date' into field. Choices are: client, client_id, date_of_order, id, price, products
+ERROR 2024-06-16 11:09:55,919 basehttp 8016 4648 "GET /hw/orders/3 HTTP/1.1" 500 110792
+INFO 2024-06-16 11:10:01,549 basehttp 8016 4648 "GET /hw/orders/ HTTP/1.1" 200 1313
+ERROR 2024-06-16 11:10:02,738 log 8016 4648 Internal Server Error: /hw/orders/3
+Traceback (most recent call last):
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\django_project\myproject\hw_logik_and_template\views.py", line 25, in orders
+    order_week = order.filter(order_date__gte=today - timedelta(days=7))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1600, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1632, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1482, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1294, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1759, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'order_date' into field. Choices are: client, client_id, date_of_order, id, price, products
+ERROR 2024-06-16 11:10:02,740 basehttp 8016 4648 "GET /hw/orders/3 HTTP/1.1" 500 110792
+ERROR 2024-06-16 11:10:10,243 log 8016 4648 Internal Server Error: /hw/orders/3
+Traceback (most recent call last):
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\django_project\myproject\hw_logik_and_template\views.py", line 25, in orders
+    order_week = order.filter(order_date__gte=today - timedelta(days=7))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1600, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1632, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1482, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1294, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1759, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'order_date' into field. Choices are: client, client_id, date_of_order, id, price, products
+ERROR 2024-06-16 11:10:10,245 basehttp 8016 4648 "GET /hw/orders/3 HTTP/1.1" 500 110801
+ERROR 2024-06-16 11:11:06,327 log 8016 4648 Internal Server Error: /hw/orders/3
+Traceback (most recent call last):
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\django_project\myproject\hw_logik_and_template\views.py", line 25, in orders
+    order_week = order.filter(order_date__gte=today - timedelta(days=7))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1600, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1632, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1482, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1294, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1759, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'order_date' into field. Choices are: client, client_id, date_of_order, id, price, products
+ERROR 2024-06-16 11:11:06,329 basehttp 8016 4648 "GET /hw/orders/3 HTTP/1.1" 500 110792
+ERROR 2024-06-16 11:11:36,281 log 8016 4648 Internal Server Error: /hw/orders/3
+Traceback (most recent call last):
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\django_project\myproject\hw_logik_and_template\views.py", line 25, in orders
+    order_week = order.filter(date_of_order__gte=today - timedelta(days=7))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1600, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1632, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1482, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1294, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\db\models\sql\query.py", line 1759, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'order_date' into field. Choices are: client, client_id, date_of_order, id, price, products
+ERROR 2024-06-16 11:11:36,283 basehttp 8016 4648 "GET /hw/orders/3 HTTP/1.1" 500 110950
+INFO 2024-06-16 11:11:37,030 autoreload 8016 13464 D:\Ucheba\django_project\myproject\hw_logik_and_template\views.py changed, reloading.
+INFO 2024-06-16 11:11:37,577 autoreload 5856 7384 Watching for file changes with StatReloader
+INFO 2024-06-16 11:11:37,921 basehttp 5856 4260 "GET /hw/orders/3 HTTP/1.1" 200 970
+INFO 2024-06-16 11:11:53,621 basehttp 5856 4260 "GET /hw/orders/1 HTTP/1.1" 200 1382
+INFO 2024-06-16 11:14:17,907 basehttp 5856 4260 "GET /hw/orders/3 HTTP/1.1" 200 970
+INFO 2024-06-16 11:14:22,784 basehttp 5856 4260 "GET /hw/orders/3 HTTP/1.1" 200 970
+INFO 2024-06-16 11:14:27,661 basehttp 5856 4260 "GET /hw/orders/1 HTTP/1.1" 200 1382
+WARNING 2024-06-16 11:18:09,634 log 5856 4260 Not Found: /hw/
+WARNING 2024-06-16 11:18:09,634 basehttp 5856 4260 "GET /hw/ HTTP/1.1" 404 3379
+INFO 2024-06-16 11:18:20,230 basehttp 5856 4260 "GET /hw/pre/ HTTP/1.1" 200 1044
+INFO 2024-06-16 11:18:21,843 basehttp 5856 4260 "GET /hw/orders/ HTTP/1.1" 200 1309
+INFO 2024-06-16 11:18:24,054 basehttp 5856 4260 "GET /hw/orders/1 HTTP/1.1" 200 1475
+INFO 2024-06-16 11:18:34,730 basehttp 5856 4260 "GET /hw/orders/4 HTTP/1.1" 200 1058
+INFO 2024-06-16 11:18:44,478 basehttp 5856 4260 "GET /hw/orders/3 HTTP/1.1" 200 1019
+INFO 2024-06-16 11:21:50,351 autoreload 5856 7384 D:\Ucheba\django_project\myproject\hw_logik_and_template\models.py changed, reloading.
+INFO 2024-06-16 11:21:50,875 autoreload 10564 13448 Watching for file changes with StatReloader
+INFO 2024-06-16 11:22:04,365 basehttp 10564 11812 "GET /hw/orders/1 HTTP/1.1" 200 1475
+INFO 2024-06-16 11:23:03,642 autoreload 10564 13448 D:\Ucheba\django_project\myproject\hw_logik_and_template\models.py changed, reloading.
+INFO 2024-06-16 11:23:04,166 autoreload 2824 8 Watching for file changes with StatReloader
+INFO 2024-06-16 11:27:17,595 basehttp 2824 5288 "GET /hw/orders/ HTTP/1.1" 200 1651
+INFO 2024-06-16 11:27:18,678 basehttp 2824 5288 "GET /hw/orders/ HTTP/1.1" 200 1651
+INFO 2024-06-16 11:27:31,008 basehttp 2824 5288 "GET /hw/orders/1 HTTP/1.1" 200 2158
+INFO 2024-06-16 11:30:09,618 autoreload 2824 8 D:\Ucheba\django_project\myproject\hw_logik_and_template\views.py changed, reloading.
+INFO 2024-06-16 11:30:10,115 autoreload 8960 2572 Watching for file changes with StatReloader
+INFO 2024-06-16 11:30:10,417 basehttp 8960 12064 "GET /hw/orders/1 HTTP/1.1" 200 2158
+INFO 2024-06-16 11:30:39,414 basehttp 8960 12064 "GET /hw/orders/ HTTP/1.1" 200 1308
+INFO 2024-06-16 11:30:42,777 basehttp 8960 12064 "GET /hw/orders/4 HTTP/1.1" 200 1057
+INFO 2024-06-16 11:32:11,116 basehttp 8960 12064 "GET /hw/orders/ HTTP/1.1" 200 1440
+INFO 2024-06-16 11:32:19,796 basehttp 8960 12064 "GET /hw/orders/3 HTTP/1.1" 200 1018
+ERROR 2024-06-16 11:35:32,308 log 8960 12064 Internal Server Error: /hw/orders/
+Traceback (most recent call last):
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: '-'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\django_project\myproject\hw_logik_and_template\views.py", line 45, in orders
+    return render(request, "hw_logik_and_template/orders.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 960, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 959, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 892, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 895, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '-' from '-'
+ERROR 2024-06-16 11:35:32,318 basehttp 8960 12064 "GET /hw/orders/ HTTP/1.1" 500 277587
+ERROR 2024-06-16 11:35:35,812 log 8960 12064 Internal Server Error: /hw/orders/
+Traceback (most recent call last):
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: '-'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\django_project\myproject\hw_logik_and_template\views.py", line 45, in orders
+    return render(request, "hw_logik_and_template/orders.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 960, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 959, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 892, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 895, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '-' from '-'
+ERROR 2024-06-16 11:35:35,817 basehttp 8960 12064 "GET /hw/orders/ HTTP/1.1" 500 277450
+ERROR 2024-06-16 11:36:08,711 log 8960 12064 Internal Server Error: /hw/orders/
+Traceback (most recent call last):
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: '-'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\django_project\myproject\hw_logik_and_template\views.py", line 45, in orders
+    return render(request, "hw_logik_and_template/orders.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 960, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 959, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 892, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 895, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '-' from '-'
+ERROR 2024-06-16 11:36:08,718 basehttp 8960 12064 "GET /hw/orders/ HTTP/1.1" 500 278851
+ERROR 2024-06-16 11:36:10,462 log 8960 12064 Internal Server Error: /hw/orders/
+Traceback (most recent call last):
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: '-'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\django_project\myproject\hw_logik_and_template\views.py", line 45, in orders
+    return render(request, "hw_logik_and_template/orders.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 960, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 959, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 892, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\defaulttags.py", line 895, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '-' from '-'
+ERROR 2024-06-16 11:36:10,467 basehttp 8960 12064 "GET /hw/orders/ HTTP/1.1" 500 278851
+INFO 2024-06-16 11:38:20,818 basehttp 8960 12064 "GET /hw/orders/ HTTP/1.1" 200 1436
+INFO 2024-06-16 11:38:22,040 basehttp 8960 12064 "GET /hw/orders/1 HTTP/1.1" 200 1504
+INFO 2024-06-16 11:38:28,015 basehttp 8960 12064 "GET /hw/orders/1 HTTP/1.1" 200 1504
+INFO 2024-06-16 11:40:34,027 basehttp 8960 12064 "GET /hw/orders/ HTTP/1.1" 200 1436
+INFO 2024-06-16 11:40:35,814 basehttp 8960 12064 "GET /hw/orders/ HTTP/1.1" 200 1436
+INFO 2024-06-16 11:40:36,575 basehttp 8960 12064 "GET /hw/orders/ HTTP/1.1" 200 1436
+INFO 2024-06-16 11:40:37,183 basehttp 8960 12064 "GET /hw/orders/ HTTP/1.1" 200 1436
+INFO 2024-06-16 11:40:37,693 basehttp 8960 12064 "GET /hw/orders/ HTTP/1.1" 200 1436
+INFO 2024-06-16 11:40:39,657 basehttp 8960 12064 "GET /hw/orders/ HTTP/1.1" 200 1436
+INFO 2024-06-16 11:40:40,430 basehttp 8960 12064 "GET /hw/orders/ HTTP/1.1" 200 1436
+INFO 2024-06-16 11:41:23,211 basehttp 8960 12064 "GET /hw/orders/4 HTTP/1.1" 200 1093
+INFO 2024-06-16 11:42:01,194 basehttp 8960 12064 "GET /hw/orders/ HTTP/1.1" 200 1520
+INFO 2024-06-16 11:42:07,157 basehttp 8960 12064 "GET /hw/orders/1 HTTP/1.1" 200 1546
+INFO 2024-06-16 11:43:54,247 basehttp 8960 12064 "GET /hw/orders/1 HTTP/1.1" 200 1242
+INFO 2024-06-16 11:44:34,778 basehttp 8960 12064 "GET /hw/pre/ HTTP/1.1" 200 1044
+INFO 2024-06-16 11:45:01,410 basehttp 8960 12064 "GET /hw/orders/ HTTP/1.1" 200 1322

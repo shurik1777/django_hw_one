@@ -22,9 +22,9 @@ def orders(request, client_id: int = None):
         today = timezone.now()
 
         # Заказы клиента за период времени
-        order_week = order.filter(order_date__gte=today - timedelta(days=7))
-        order_month = order.filter(order_date__gte=today - timedelta(days=30))
-        order_year = order.filter(order_date__gte=today - timedelta(days=365))
+        order_week = order.filter(date_of_order__gte=today - timedelta(days=7)).order_by('-date_of_order')
+        order_month = order.filter(date_of_order__gte=today - timedelta(days=30)).order_by('-date_of_order')
+        order_year = order.filter(date_of_order__gte=today - timedelta(days=365)).order_by('-date_of_order')
 
         # Получаем уникальные продукты в заказах
         products_week = {product for order in order_week for product in order.products.all()}
