@@ -62,7 +62,7 @@ class Order(m.Model):
     client = m.ForeignKey(Client, on_delete=m.CASCADE, related_name='orders')
     products = m.ManyToManyField(Product, related_name='orders')
     price = m.DecimalField(max_digits=5, decimal_places=2)
-    date_of_order = m.DateField(auto_now_add=True)
+    date_of_order = m.DateField()
 
     def __str__(self):
         return f"Client: {self.client}, price: {self.client.name}"

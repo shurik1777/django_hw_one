@@ -86,7 +86,7 @@ class Command(BaseCommand):
     def handle_list(self):
         orders = Order.objects.all()
         for order in orders:
-            print(f"{order.id}: {order.client}, {order.product}, {order.price}")
+            print(f"{order.id}: {order.client}, {order.products}, {order.price}")
 
     def handle_delete(self, **options):
         order_id = options['order_id']
