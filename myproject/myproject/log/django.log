@@ -3350,3 +3350,256 @@ INFO 2024-06-16 21:48:06,776 basehttp 10108 5196 "GET /hw/orders/1 HTTP/1.1" 200
 INFO 2024-06-16 21:48:30,281 basehttp 10108 5196 "GET /hw/orders/1 HTTP/1.1" 200 2711
 INFO 2024-06-16 21:48:31,067 basehttp 10108 5196 "GET /hw/orders/1 HTTP/1.1" 200 2711
 INFO 2024-06-16 21:48:35,814 basehttp 10108 5196 "GET /hw/orders/2 HTTP/1.1" 200 2679
+INFO 2024-06-17 18:54:43,628 autoreload 5236 9740 Watching for file changes with StatReloader
+INFO 2024-06-17 18:54:46,839 basehttp 5236 10108 "GET / HTTP/1.1" 200 648
+WARNING 2024-06-17 18:54:47,128 log 5236 10108 Not Found: /favicon.ico
+WARNING 2024-06-17 18:54:47,128 basehttp 5236 10108 "GET /favicon.ico HTTP/1.1" 404 2966
+INFO 2024-06-17 18:54:49,825 basehttp 5236 10108 "GET /hw/pre/ HTTP/1.1" 200 996
+INFO 2024-06-17 18:54:52,185 basehttp 5236 10108 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-06-17 18:54:52,293 basehttp 5236 10108 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4241
+INFO 2024-06-17 18:54:52,421 basehttp 5236 10108 "GET /static/admin/css/base.css HTTP/1.1" 200 21441
+INFO 2024-06-17 18:54:52,433 basehttp 5236 3728 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18529
+INFO 2024-06-17 18:54:52,440 basehttp 5236 4548 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2024-06-17 18:54:52,441 basehttp 5236 5300 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2024-06-17 18:54:52,445 basehttp 5236 7032 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2024-06-17 18:54:52,445 basehttp 5236 10108 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2024-06-17 18:54:52,447 basehttp 5236 12696 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2024-06-17 18:54:55,121 basehttp 5236 12696 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4508
+WARNING 2024-06-17 18:54:55,174 log 5236 12696 Not Found: /favicon.ico
+WARNING 2024-06-17 18:54:55,175 basehttp 5236 12696 "GET /favicon.ico HTTP/1.1" 404 2966
+WARNING 2024-06-17 18:54:55,188 log 5236 12696 Not Found: /favicon.ico
+WARNING 2024-06-17 18:54:55,189 basehttp 5236 12696 "GET /favicon.ico HTTP/1.1" 404 2966
+INFO 2024-06-17 18:55:04,695 basehttp 5236 12696 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4508
+WARNING 2024-06-17 18:55:04,735 log 5236 12696 Not Found: /favicon.ico
+WARNING 2024-06-17 18:55:04,735 basehttp 5236 12696 "GET /favicon.ico HTTP/1.1" 404 2966
+WARNING 2024-06-17 18:55:04,744 log 5236 12696 Not Found: /favicon.ico
+WARNING 2024-06-17 18:55:04,744 basehttp 5236 12696 "GET /favicon.ico HTTP/1.1" 404 2966
+INFO 2024-06-17 18:55:18,438 basehttp 5236 8132 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4241
+INFO 2024-06-17 18:55:18,501 basehttp 5236 8132 "GET /static/admin/css/base.css HTTP/1.1" 200 21441
+INFO 2024-06-17 18:55:18,505 basehttp 5236 5352 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2024-06-17 18:55:18,509 basehttp 5236 6732 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2024-06-17 18:55:18,509 basehttp 5236 8196 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2024-06-17 18:55:18,510 basehttp 5236 9832 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18529
+INFO 2024-06-17 18:55:18,571 basehttp 5236 9832 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2024-06-17 18:55:18,571 basehttp 5236 8196 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+WARNING 2024-06-17 18:55:18,648 log 5236 8196 Not Found: /favicon.ico
+WARNING 2024-06-17 18:55:18,648 basehttp 5236 8196 "GET /favicon.ico HTTP/1.1" 404 2966
+INFO 2024-06-17 18:55:22,463 basehttp 5236 8196 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4508
+WARNING 2024-06-17 18:55:22,523 log 5236 8196 Not Found: /favicon.ico
+WARNING 2024-06-17 18:55:22,524 basehttp 5236 8196 "GET /favicon.ico HTTP/1.1" 404 2966
+WARNING 2024-06-17 18:55:22,533 log 5236 8196 Not Found: /favicon.ico
+WARNING 2024-06-17 18:55:22,533 basehttp 5236 8196 "GET /favicon.ico HTTP/1.1" 404 2966
+INFO 2024-06-17 18:57:22,468 autoreload 8824 3660 Watching for file changes with StatReloader
+INFO 2024-06-17 18:57:26,875 basehttp 8824 6804 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-06-17 18:57:27,069 basehttp 8824 6804 "GET /admin/ HTTP/1.1" 200 5826
+INFO 2024-06-17 18:57:27,123 basehttp 8824 6804 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2024-06-17 18:57:27,178 basehttp 8824 6804 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-06-17 18:57:27,178 basehttp 8824 11856 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-06-17 19:09:01,623 autoreload 8824 3660 D:\Ucheba\django_project\myproject\myapp\admin.py changed, reloading.
+INFO 2024-06-17 19:09:02,140 autoreload 13596 14324 Watching for file changes with StatReloader
+INFO 2024-06-17 19:10:09,767 autoreload 13596 14324 D:\Ucheba\django_project\myproject\myapp\admin.py changed, reloading.
+INFO 2024-06-17 19:10:10,260 autoreload 9808 12188 Watching for file changes with StatReloader
+INFO 2024-06-17 19:11:30,236 autoreload 9808 12188 D:\Ucheba\django_project\myproject\myapp\admin.py changed, reloading.
+INFO 2024-06-17 19:11:30,756 autoreload 1016 14096 Watching for file changes with StatReloader
+INFO 2024-06-17 19:12:27,427 autoreload 1016 14096 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin.py changed, reloading.
+INFO 2024-06-17 19:12:27,942 autoreload 10600 3172 Watching for file changes with StatReloader
+INFO 2024-06-17 19:12:51,978 autoreload 10600 3172 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin.py changed, reloading.
+INFO 2024-06-17 19:12:52,579 autoreload 10572 6468 Watching for file changes with StatReloader
+INFO 2024-06-17 19:12:55,723 basehttp 10572 9332 "GET /admin/auth/group/add/ HTTP/1.1" 200 14366
+INFO 2024-06-17 19:12:55,860 basehttp 10572 11964 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2024-06-17 19:12:55,866 basehttp 10572 8732 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2024-06-17 19:12:55,868 basehttp 10572 9332 "GET /static/admin/css/forms.css HTTP/1.1" 200 9047
+INFO 2024-06-17 19:12:55,870 basehttp 10572 1112 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-06-17 19:12:55,873 basehttp 10572 11964 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2024-06-17 19:12:55,891 basehttp 10572 10848 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2024-06-17 19:12:55,898 basehttp 10572 10848 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11907
+INFO 2024-06-17 19:12:55,902 basehttp 10572 9332 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2024-06-17 19:12:55,904 basehttp 10572 1112 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-06-17 19:12:55,906 basehttp 10572 8732 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15292
+INFO 2024-06-17 19:12:55,911 basehttp 10572 10848 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2024-06-17 19:12:55,913 basehttp 10572 11804 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2024-06-17 19:12:55,928 basehttp 10572 9332 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:12:55,939 basehttp 10572 9332 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-06-17 19:12:55,963 basehttp 10572 11964 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2024-06-17 19:12:56,013 basehttp 10572 11964 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2024-06-17 19:12:56,020 basehttp 10572 9332 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2024-06-17 19:14:02,876 basehttp 10572 11964 "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO 2024-06-17 19:14:02,932 basehttp 10572 9332 "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2024-06-17 19:14:46,410 basehttp 10572 9332 "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+INFO 2024-06-17 19:14:46,426 basehttp 10572 9332 "GET /admin/auth/group/add/ HTTP/1.1" 200 14663
+INFO 2024-06-17 19:14:46,440 basehttp 10572 9332 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:14:46,530 basehttp 10572 9332 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2024-06-17 19:17:57,568 basehttp 10572 9332 "GET /admin/auth/user/ HTTP/1.1" 200 11913
+INFO 2024-06-17 19:17:57,585 basehttp 10572 11964 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:17:57,589 basehttp 10572 9332 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2024-06-17 19:17:57,605 basehttp 10572 9332 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2024-06-17 19:17:57,613 basehttp 10572 11964 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2024-06-17 19:17:57,613 basehttp 10572 11384 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2024-06-17 19:17:57,620 basehttp 10572 9332 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2024-06-17 19:17:58,599 basehttp 10572 9332 "GET /admin/auth/group/ HTTP/1.1" 200 9019
+INFO 2024-06-17 19:17:58,613 basehttp 10572 9332 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:17:59,932 basehttp 10572 9332 "GET /admin/auth/user/ HTTP/1.1" 200 11913
+INFO 2024-06-17 19:17:59,947 basehttp 10572 9332 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:18:00,715 basehttp 10572 9332 "GET /admin/auth/group/ HTTP/1.1" 200 9019
+INFO 2024-06-17 19:18:00,732 basehttp 10572 9332 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:47:37,710 autoreload 10572 6468 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin.py changed, reloading.
+INFO 2024-06-17 19:47:38,297 autoreload 7672 14932 Watching for file changes with StatReloader
+INFO 2024-06-17 19:50:56,372 autoreload 7672 14932 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin.py changed, reloading.
+INFO 2024-06-17 19:50:56,895 autoreload 9764 14388 Watching for file changes with StatReloader
+INFO 2024-06-17 19:53:44,618 autoreload 6504 11360 Watching for file changes with StatReloader
+INFO 2024-06-17 19:53:55,850 basehttp 6504 10108 "GET /hw/pre/ HTTP/1.1" 200 996
+INFO 2024-06-17 19:53:59,412 basehttp 6504 10108 "GET / HTTP/1.1" 200 648
+INFO 2024-06-17 19:54:01,939 basehttp 6504 10108 "GET /admin/ HTTP/1.1" 200 6997
+INFO 2024-06-17 19:54:05,705 basehttp 6504 10108 "GET /admin/hw_logik_and_template/client/ HTTP/1.1" 200 13001
+INFO 2024-06-17 19:54:05,726 basehttp 6504 10108 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:54:24,367 basehttp 6504 10108 "GET /admin/hw_logik_and_template/client/7/change/ HTTP/1.1" 200 10997
+INFO 2024-06-17 19:54:24,381 basehttp 6504 10108 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:54:35,971 basehttp 6504 10108 "GET /admin/hw_logik_and_template/client/ HTTP/1.1" 200 13001
+INFO 2024-06-17 19:54:35,987 basehttp 6504 10108 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:54:40,718 basehttp 6504 10108 "GET /admin/hw_logik_and_template/client/7/change/ HTTP/1.1" 200 10997
+INFO 2024-06-17 19:54:40,732 basehttp 6504 10108 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:54:43,640 basehttp 6504 10108 "GET /admin/hw_logik_and_template/client/ HTTP/1.1" 200 13001
+INFO 2024-06-17 19:54:43,659 basehttp 6504 10108 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:54:47,096 basehttp 6504 10108 "GET /admin/hw_logik_and_template/client/7/change/ HTTP/1.1" 200 10997
+INFO 2024-06-17 19:54:47,110 basehttp 6504 10108 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:54:51,290 basehttp 6504 10108 "GET /admin/hw_logik_and_template/client/ HTTP/1.1" 200 13001
+INFO 2024-06-17 19:54:51,309 basehttp 6504 10108 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:55:10,665 basehttp 6504 10108 "GET /admin/hw_logik_and_template/client/7/change/ HTTP/1.1" 200 10997
+INFO 2024-06-17 19:55:10,678 basehttp 6504 10108 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:55:57,991 autoreload 6504 11360 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin.py changed, reloading.
+INFO 2024-06-17 19:55:58,553 autoreload 3900 9300 Watching for file changes with StatReloader
+INFO 2024-06-17 19:56:03,512 basehttp 3900 2060 "GET /admin/hw_logik_and_template/client/ HTTP/1.1" 200 13001
+INFO 2024-06-17 19:56:03,536 basehttp 3900 2060 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:56:05,862 basehttp 3900 2060 "GET /admin/hw_logik_and_template/client/add/ HTTP/1.1" 200 10656
+INFO 2024-06-17 19:56:05,878 basehttp 3900 2060 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:57:45,828 autoreload 3900 9300 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin.py changed, reloading.
+INFO 2024-06-17 19:57:46,364 autoreload 6492 9208 Watching for file changes with StatReloader
+INFO 2024-06-17 19:58:13,801 autoreload 6492 9208 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin.py changed, reloading.
+INFO 2024-06-17 19:58:14,346 autoreload 8528 6304 Watching for file changes with StatReloader
+INFO 2024-06-17 19:58:16,832 basehttp 8528 13268 "GET /admin/hw_logik_and_template/client/ HTTP/1.1" 200 13330
+INFO 2024-06-17 19:58:16,858 basehttp 8528 13268 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:58:18,633 basehttp 8528 13268 "GET /admin/hw_logik_and_template/order/ HTTP/1.1" 200 16021
+INFO 2024-06-17 19:58:18,648 basehttp 8528 13268 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:58:24,205 basehttp 8528 13268 "GET /admin/hw_logik_and_template/order/?o=1 HTTP/1.1" 200 16741
+INFO 2024-06-17 19:58:24,220 basehttp 8528 13268 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:58:27,138 basehttp 8528 13268 "GET /admin/hw_logik_and_template/order/20/change/?_changelist_filters=o%3D1 HTTP/1.1" 200 13878
+INFO 2024-06-17 19:58:27,155 basehttp 8528 7464 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:58:27,214 basehttp 8528 13268 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2024-06-17 19:58:27,225 basehttp 8528 2524 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2024-06-17 19:58:27,263 basehttp 8528 2524 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2024-06-17 19:58:30,384 basehttp 8528 2524 "GET /static/admin/img/calendar-icons.svg HTTP/1.1" 200 1094
+INFO 2024-06-17 19:58:43,410 basehttp 8528 2524 "GET /admin/hw_logik_and_template/order/ HTTP/1.1" 200 16021
+INFO 2024-06-17 19:58:43,428 basehttp 8528 2524 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:58:45,755 basehttp 8528 2524 "GET /admin/hw_logik_and_template/order/28/change/ HTTP/1.1" 200 13748
+INFO 2024-06-17 19:58:45,770 basehttp 8528 2524 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:58:47,322 basehttp 8528 2524 "GET /admin/hw_logik_and_template/order/ HTTP/1.1" 200 16021
+INFO 2024-06-17 19:58:47,334 basehttp 8528 2524 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 19:59:55,287 autoreload 8528 6304 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin.py changed, reloading.
+INFO 2024-06-17 19:59:55,827 autoreload 7740 7176 Watching for file changes with StatReloader
+INFO 2024-06-17 20:00:19,185 autoreload 7740 7176 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin.py changed, reloading.
+INFO 2024-06-17 20:00:19,721 autoreload 13844 9716 Watching for file changes with StatReloader
+INFO 2024-06-17 20:03:50,439 autoreload 13844 9716 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin.py changed, reloading.
+INFO 2024-06-17 20:03:50,972 autoreload 13688 11064 Watching for file changes with StatReloader
+INFO 2024-06-17 20:07:49,161 autoreload 13688 11064 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin_mixins.py changed, reloading.
+INFO 2024-06-17 20:07:49,708 autoreload 9716 13844 Watching for file changes with StatReloader
+INFO 2024-06-17 20:11:34,200 autoreload 9716 13844 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin_mixins.py changed, reloading.
+INFO 2024-06-17 20:11:34,762 autoreload 11376 7032 Watching for file changes with StatReloader
+INFO 2024-06-17 20:14:01,771 autoreload 11376 7032 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin_mixins.py changed, reloading.
+INFO 2024-06-17 20:14:02,311 autoreload 1660 1532 Watching for file changes with StatReloader
+INFO 2024-06-17 20:15:13,776 autoreload 1660 1532 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin_mixins.py changed, reloading.
+INFO 2024-06-17 20:15:14,308 autoreload 7760 14640 Watching for file changes with StatReloader
+INFO 2024-06-17 20:16:54,071 autoreload 7760 14640 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin_mixins.py changed, reloading.
+INFO 2024-06-17 20:16:54,640 autoreload 6088 4516 Watching for file changes with StatReloader
+INFO 2024-06-17 20:16:58,277 basehttp 6088 9520 "GET /admin/ HTTP/1.1" 200 7480
+INFO 2024-06-17 20:16:59,711 basehttp 6088 9520 "GET /admin/hw_logik_and_template/client/ HTTP/1.1" 200 13330
+INFO 2024-06-17 20:16:59,728 basehttp 6088 9520 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 20:17:08,357 basehttp 6088 9520 "GET /admin/hw_logik_and_template/client/add/ HTTP/1.1" 200 10985
+INFO 2024-06-17 20:17:08,371 basehttp 6088 9520 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 20:17:10,131 basehttp 6088 9520 "GET /admin/hw_logik_and_template/ HTTP/1.1" 200 5919
+INFO 2024-06-17 20:17:11,304 basehttp 6088 9520 "GET /admin/hw_logik_and_template/client/ HTTP/1.1" 200 13330
+INFO 2024-06-17 20:17:11,319 basehttp 6088 9520 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 20:17:38,728 autoreload 15076 5328 Watching for file changes with StatReloader
+INFO 2024-06-17 20:17:42,727 basehttp 15076 5792 "GET /admin/hw_logik_and_template/client/ HTTP/1.1" 200 13330
+INFO 2024-06-17 20:17:42,741 basehttp 15076 5792 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 20:17:46,296 basehttp 15076 5792 "GET /admin/hw_logik_and_template/client/ HTTP/1.1" 200 13330
+INFO 2024-06-17 20:17:46,308 basehttp 15076 5792 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 20:18:03,261 autoreload 15076 5328 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin.py changed, reloading.
+INFO 2024-06-17 20:18:03,880 autoreload 12076 13752 Watching for file changes with StatReloader
+INFO 2024-06-17 20:18:04,713 basehttp 12076 14620 "GET /admin/hw_logik_and_template/client/ HTTP/1.1" 200 13386
+INFO 2024-06-17 20:18:04,730 basehttp 12076 14620 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 20:18:13,172 basehttp 12076 14620 "POST /admin/hw_logik_and_template/client/ HTTP/1.1" 200 551
+INFO 2024-06-17 20:20:08,666 autoreload 12076 13752 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin_mixins.py changed, reloading.
+INFO 2024-06-17 20:20:09,209 autoreload 15212 8172 Watching for file changes with StatReloader
+INFO 2024-06-17 20:20:10,287 basehttp 15212 14444 "GET /admin/hw_logik_and_template/client/ HTTP/1.1" 200 13386
+INFO 2024-06-17 20:20:10,303 basehttp 15212 14444 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 20:20:15,748 basehttp 15212 14444 "POST /admin/hw_logik_and_template/client/ HTTP/1.1" 200 551
+INFO 2024-06-17 20:21:59,482 autoreload 15212 8172 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin_mixins.py changed, reloading.
+INFO 2024-06-17 20:22:00,010 autoreload 9672 12848 Watching for file changes with StatReloader
+INFO 2024-06-17 20:24:07,968 autoreload 9672 12848 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin_mixins.py changed, reloading.
+INFO 2024-06-17 20:24:08,726 autoreload 3636 11756 Watching for file changes with StatReloader
+INFO 2024-06-17 20:25:23,440 autoreload 3636 11756 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin_mixins.py changed, reloading.
+INFO 2024-06-17 20:25:23,996 autoreload 9460 1644 Watching for file changes with StatReloader
+INFO 2024-06-17 20:25:25,206 basehttp 9460 12840 "GET /admin/hw_logik_and_template/client/ HTTP/1.1" 200 13386
+INFO 2024-06-17 20:25:25,231 basehttp 9460 12840 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 20:25:28,921 basehttp 9460 12840 "GET /admin/hw_logik_and_template/client/add/ HTTP/1.1" 200 10985
+INFO 2024-06-17 20:25:28,937 basehttp 9460 12840 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 20:25:30,488 basehttp 9460 12840 "GET /admin/hw_logik_and_template/client/ HTTP/1.1" 200 13386
+INFO 2024-06-17 20:25:30,509 basehttp 9460 12840 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+INFO 2024-06-17 20:25:34,293 basehttp 9460 12840 "POST /admin/hw_logik_and_template/client/ HTTP/1.1" 200 551
+INFO 2024-06-17 20:26:20,768 autoreload 9460 1644 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin_mixins.py changed, reloading.
+INFO 2024-06-17 20:26:21,309 autoreload 12244 9796 Watching for file changes with StatReloader
+INFO 2024-06-17 20:26:24,252 autoreload 14020 13560 Watching for file changes with StatReloader
+INFO 2024-06-17 20:26:28,393 basehttp 14020 2060 "GET /admin/hw_logik_and_template/client/ HTTP/1.1" 200 13386
+INFO 2024-06-17 20:26:28,408 basehttp 14020 2060 "GET /admin/jsi18n/ HTTP/1.1" 200 16065
+ERROR 2024-06-17 20:26:32,060 log 14020 2060 Internal Server Error: /admin/hw_logik_and_template/client/
+Traceback (most recent call last):
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\contrib\admin\options.py", line 2014, in changelist_view
+    response = self.response_action(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\contrib\admin\options.py", line 1648, in response_action
+    response = func(self, request, queryset)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\django_project\myproject\hw_logik_and_template\admin_mixins.py", line 13, in export_as_csv
+    result.writerow(field_names)
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\http\response.py", line 416, in write
+    self._container.append(self.make_bytes(content))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Ucheba\venvs\venv_gb_django\Lib\site-packages\django\http\response.py", line 317, in make_bytes
+    return bytes(value.encode(self.charset))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+LookupError: unknown encoding: windows1251
+ERROR 2024-06-17 20:26:32,064 basehttp 14020 2060 "POST /admin/hw_logik_and_template/client/ HTTP/1.1" 500 132013
+INFO 2024-06-17 20:26:47,889 autoreload 14020 13560 D:\Ucheba\django_project\myproject\hw_logik_and_template\admin_mixins.py changed, reloading.
+INFO 2024-06-17 20:26:48,442 autoreload 6916 10396 Watching for file changes with StatReloader
+INFO 2024-06-17 20:26:49,353 basehttp 6916 6504 "GET /admin/hw_logik_and_template/client/ HTTP/1.1" 200 13386
+INFO 2024-06-17 20:26:51,156 basehttp 6916 6504 "POST /admin/hw_logik_and_template/client/ HTTP/1.1" 200 542
