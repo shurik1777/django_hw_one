@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>{{ title }}</h2>
+
+    <h3>Заказы за неделю:</h3>
+    <ul>
+        {% for order in orders_week %}
+            <li>
+                Дата заказа: {{ order.date_of_order }} -
+                Товары:
+                {% for product in order.products.all %}
+                    {{ product.title }}
+                {% endfor %}
+                - Сумма: {{ order.price }}$
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h3>Заказы за месяц:</h3>
+    <ul>
+        {% for order in orders_month %}
+            <li>
+                Дата заказа: {{ order.date_of_order }} -
+                Товары:
+                {% for product in order.products.all %}
+                    {{ product.title }}
+                {% endfor %}
+                - Сумма: {{ order.price }}$
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h3>Заказы за год:</h3>
+    <ul>
+        {% for order in orders_year %}
+            <li>
+                Дата заказа: {{ order.date_of_order }} -
+                Товары:
+                {% for product in order.products.all %}
+                    {{ product.title }}
+                {% endfor %}
+                - Сумма: {{ order.price }}$
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
